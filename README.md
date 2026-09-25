@@ -86,7 +86,7 @@ build/X86/gem5.opt -d bw_mem configs/deprecated/example/se.py --cmd=tests/test-p
   --restore-simpoint-checkpoint --checkpoint-dir=perl_r_1_init/ -r 12 \
   cd -
   ```
-* mcf: 
+<!-- * mcf: 
   ```
   build/X86/gem5.opt -d mcf \
   configs/deprecated/example/se.py \
@@ -104,7 +104,7 @@ build/X86/gem5.opt -d bw_mem configs/deprecated/example/se.py --cmd=tests/test-p
   --mem-size=4GB --cpu-type=O3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=512kB \
   --restore-simpoint-checkpoint --checkpoint-dir=omp_r_init/ -r 7 \
   cd -
-  ```
+  ``` -->
 * deepsjeng: 
   ```
   cd tests/test-progs/deepsjeng \
@@ -112,10 +112,9 @@ build/X86/gem5.opt -d bw_mem configs/deprecated/example/se.py --cmd=tests/test-p
   ../../../configs/deprecated/example/se.py \
   --cmd ./deepsjeng_r  --options="ref.txt" \
   --mem-size=4GB --cpu-type=O3CPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=512kB \
-  --restore-simpoint-checkpoint --checkpoint-dir=deep_r_init/ -r 3 \
-  cd -
+  --restore-simpoint-checkpoint --checkpoint-dir=deep_r_init/ -r 3
   ```
-* named: \
+* named: 
   ```
   build/X86/gem5.opt -d named \
   configs/deprecated/example/se.py \
